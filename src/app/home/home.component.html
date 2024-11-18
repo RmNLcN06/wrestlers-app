@@ -13,6 +13,6 @@
     </section>
 </div>
 <section class="results">
-    <app-wrestler [wrestler]="wrestler"></app-wrestler>
+    <app-wrestler *ngFor="let wrestler of wrestlerList" [wrestler]="wrestler"></app-wrestler>
 </section>
 
