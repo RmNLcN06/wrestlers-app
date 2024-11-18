@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Wrestler } from '../wrestler';
 
 @Component({
   selector: 'app-wrestler',
