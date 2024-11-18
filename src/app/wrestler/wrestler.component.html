@@ -1,1 +1,6 @@
-<p>wrestler works!</p>
+<section class="listing">
+    <img [src]="wrestler.photo" alt="Photo of {{ wrestler.firstname }} {{ wrestler.lastname}}" class="listing-photo" crossorigin>
+    <h2 class="listing-heading">{{wrestler.firstname}} "{{wrestler.alias}}" {{wrestler.lastname}}</h2>
+    <p class="listing-location">Show : {{wrestler.show}}</p>
+    <p class="listing-location">Federation : {{wrestler.federation}}</p>
+</section>
