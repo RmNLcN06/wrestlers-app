@@ -9,5 +9,5 @@ import { Wrestler } from '../wrestler';
   styleUrl: './wrestler.component.css'
 })
 export class WrestlerComponent {
-
+  @Input() wrestler!: Wrestler;
 }
