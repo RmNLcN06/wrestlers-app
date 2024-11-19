@@ -13,9 +13,11 @@ import { Wrestler } from '../wrestler';
 })
 export class DetailsWrestlerComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
-  wrestlerId = -1;
-  
+  wrestlerService = inject(WrestlerService);
+  wrestler: Wrestler | undefined; 
+
   constructor() {
-    this.wrestlerId = Number(this.route.snapshot.params['id']);
+    const wrestlerId = Number(this.route.snapshot.params['id']);
+    this.wrestler = this.wrestlerService.getWrestlerById(wrestlerId);
   }
 }

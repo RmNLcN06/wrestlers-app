@@ -1,1 +1,17 @@
-<p>details-wrestler works! {{ wrestlerId }}</p>
+<article>
+    <img [src]="wrestler?.photo" alt="Photo of {{wrestler?.firstname}} {{wrestler?.lastname}}" class="listing-photo">
+    <section class="listing-description">
+        <h2 class="listing-heading">{{wrestler?.firstname}} "{{wrestler?.alias}}" {{wrestler?.lastname}}</h2>
+        <p class="listing-location">{{wrestler?.city}}, {{wrestler?.state}}</p>
+    </section>
+    <section class="listing-features">
+        <h2 class="section-heading">About this wrestler</h2>
+        <ul>
+            <li>Age: {{ wrestler?.age}} years old</li>
+            <li>Show: {{ wrestler?.show }}</li>
+            <li>Federation: {{ wrestler?.federation }}</li>
+            <li>Retire: {{ wrestler?.retire}}</li>
+            <li>Injured: {{wrestler?.injury}} </li>
+        </ul>
+    </section>
+</article>
