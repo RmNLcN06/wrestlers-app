@@ -3,4 +3,5 @@
     <h2 class="listing-heading">{{wrestler.firstname}} "{{wrestler.alias}}" {{wrestler.lastname}}</h2>
     <p class="listing-location">Show : {{wrestler.show}}</p>
     <p class="listing-location">Federation : {{wrestler.federation}}</p>
+    <a [routerLink]="['/details', wrestler.id]">Learn More</a>
 </section>
