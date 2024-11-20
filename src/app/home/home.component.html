@@ -1,14 +1,14 @@
 <div class="search-container">
     <section>
         <form action="">
-            <input type="text" placeholder="Filter by federation" #filter/>
-            <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+            <input type="text" placeholder="Filter by federation" #filterFederation/>
+            <button class="primary" type="button" (click)="filterResultsByFederation(filterFederation.value)">Search</button>
         </form>
     </section>
     <section>
         <form action="">
-            <input type="text" placeholder="Filter by show" />
-            <button class="primary" type="button">Search</button>
+            <input type="text" placeholder="Filter by show" #filterShow/>
+            <button class="primary" type="button" (click)="filterResultsByShow(filterShow.value)">Search</button>
         </form>
     </section>
 </div>

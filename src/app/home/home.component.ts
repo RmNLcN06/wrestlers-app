@@ -23,13 +23,25 @@ export class HomeComponent {
     this.filteredWrestlerList = this.wrestlerList;
   }
 
-  filterResults(text: string) {
+  // Filter By Federation
+  filterResultsByFederation(text: string) {
     if(!text) {
       this.filteredWrestlerList = this.wrestlerList;
       return;
     }
 
     this.filteredWrestlerList = this.wrestlerList.filter((wrestler) => wrestler?.federation.toLowerCase().includes(text.toLowerCase()),
+    );
+  }
+
+  // Filter By Show
+  filterResultsByShow(text: string) {
+    if(!text) {
+      this.filteredWrestlerList = this.wrestlerList;
+      return;
+    }
+
+    this.filteredWrestlerList = this.wrestlerList.filter((wrestler) => wrestler?.show.toLowerCase().includes(text.toLowerCase()),
     );
   }
 
