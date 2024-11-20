@@ -16,10 +16,23 @@ export class HomeComponent {
 
   wrestlerList: Wrestler[] = [];
   wrestleService: WrestlerService = inject(WrestlerService);
+  filteredWrestlerList: Wrestler[] = [];
 
   constructor() {
     this.wrestlerList = this.wrestleService.getAllWrestlers();
+    this.filteredWrestlerList = this.wrestlerList;
   }
+
+  filterResults(text: string) {
+    if(!text) {
+      this.filteredWrestlerList = this.wrestlerList;
+      return;
+    }
+
+    this.filteredWrestlerList = this.wrestlerList.filter((wrestler) => wrestler?.federation.toLowerCase().includes(text.toLowerCase()),
+    );
+  }
+
   // wrestlerList: Wrestler[] = [
   //   {
   //     id: 0,
