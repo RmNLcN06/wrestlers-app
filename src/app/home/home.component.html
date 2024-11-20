@@ -1,8 +1,8 @@
 <div class="search-container">
     <section>
         <form action="">
-            <input type="text" placeholder="Filter by federation" />
-            <button class="primary" type="button">Search</button>
+            <input type="text" placeholder="Filter by federation" #filter/>
+            <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
         </form>
     </section>
     <section>
@@ -13,6 +13,6 @@
     </section>
 </div>
 <section class="results">
-    <app-wrestler *ngFor="let wrestler of wrestlerList" [wrestler]="wrestler"></app-wrestler>
+    <app-wrestler *ngFor="let wrestler of filteredWrestlerList" [wrestler]="wrestler"></app-wrestler>
 </section>
 
