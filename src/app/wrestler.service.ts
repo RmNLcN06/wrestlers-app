@@ -9,15 +9,15 @@ export class WrestlerService {
   // readonly baseUrl = 'assets'
   url = 'http://localhost:3000/wrestlers';
 
+  constructor() { }
+
   async getAllWrestlers(): Promise<Wrestler[]> {
     const data = await fetch(this.url);
-    return (await data.json()) ?? [];
+    return await data.json() ?? [];
   }
 
   async getWrestlerById(id: number): Promise<Wrestler | undefined> {
     const data = await fetch(`${this.url}/${id}`);
-    return (await data.json()) ?? [];
+    return await data.json() ?? [];
   }
-
-  constructor() { }
 }

@@ -19,8 +19,11 @@ export class HomeComponent {
   filteredWrestlerList: Wrestler[] = [];
 
   constructor() {
-    this.wrestlerList = this.wrestleService.getAllWrestlers();
-    this.filteredWrestlerList = this.wrestlerList;
+    this.wrestleService.getAllWrestlers().then((wrestlerList: Wrestler[]) => {
+      this.wrestlerList = wrestlerList;
+      this.filteredWrestlerList = wrestlerList;
+    });
+      
   }
 
   // Filter By Federation

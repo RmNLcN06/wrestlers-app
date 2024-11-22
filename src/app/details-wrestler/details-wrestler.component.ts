@@ -17,7 +17,9 @@ export class DetailsWrestlerComponent {
   wrestler: Wrestler | undefined; 
 
   constructor() {
-    const wrestlerId = Number(this.route.snapshot.params['id']);
-    this.wrestler = this.wrestlerService.getWrestlerById(wrestlerId);
+    const wrestlerId = parseInt(this.route.snapshot.params['id'], 10);
+    this.wrestlerService.getWrestlerById(wrestlerId).then((wrestler) => {
+      this.wrestler = wrestler;
+    });
   }
 }
