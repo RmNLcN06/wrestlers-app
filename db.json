@@ -1,0 +1,88 @@
+{
+    "wrestlers": [
+        {
+            "id": 0,
+            "firstname": "John",
+            "lastname": "Cena",
+            "alias": "The Champ",
+            "age": 47,
+            "state": "Massachusetts",
+            "city": "West Newbury",
+            "photo": "assets/john_cena.jpg",
+            "retire": false,
+            "injury": false,
+            "federation": "WWE",
+            "show": "Raw"
+        },
+        {
+            "id": 1,
+            "firstname": "Mark",
+            "lastname": "Calaway",
+            "alias": "The Undertaker",
+            "age": 59,
+            "state": "Texas",
+            "city": "Houston",
+            "photo": "assets/the_undertaker.jpg",
+            "retire": true,
+            "injury": false,
+            "federation": "WWE",
+            "show": "Smackdown"
+        },
+        {
+            "id": 2,
+            "firstname": "Randy",
+            "lastname": "Orton",
+            "alias": "The Viper",
+            "age": 44,
+            "state": "Tennessee",
+            "city": "Knoxville",
+            "photo": "assets/randy_orton.jpg",
+            "retire": false,
+            "injury": false,
+            "federation": "WWE",
+            "show": "Raw"
+        },
+        {
+            "id": 3,
+            "firstname": "Dave",
+            "lastname": "Bautista",
+            "alias": "The Animal",
+            "age": 55,
+            "state": "District of Colombia",
+            "city": "Washington",
+            "photo": "assets/dave_bautista.jpg",
+            "retire": true,
+            "injury": false,
+            "federation": "WWE",
+            "show": "Smackdown"
+        },
+        {
+            "id": 4,
+            "firstname": "Will",
+            "lastname": "Ospreay",
+            "alias": "The Aerial Assassin",
+            "age": 31,
+            "state": "London",
+            "city": "Rainham",
+            "photo": "assets/will_ospreay.jpg",
+            "retire": false,
+            "injury": false,
+            "federation": "AEW",
+            "show": "Dynamite"
+        },
+        {
+            "id": 5,
+            "firstname": "Trevor",
+            "lastname": "Mann",
+            "alias": "Ricochet",
+            "age": 36,
+            "state": "Illinois",
+            "city": "Alton",
+            "photo": "assets/ricochet.jpg",
+            "retire": false,
+            "injury": false,
+            "federation": "AEW",
+            "show": "Dynamite"
+        }
+    ]
+}
